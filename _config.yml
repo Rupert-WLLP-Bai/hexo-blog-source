@@ -1,0 +1,116 @@
+title: "The Coding Odyssey | Chronicles of a Software Developer"
+subtitle: "Exploring the Wonders and Challenges of Building Software"
+description: "Undergraduate student at Tongji University, Shanghai, China. Majoring in Software Engineering."
+keywords: "software development, coding, programming, computer science, algorithms, data structures, industry trends"
+author: "Norfloxainer Bai"
+language: zh-CN
+timezone: ''
+url: https://rupert-wllp-bai.github.io
+permalink: ':year/:month/:day/:title/'
+permalink_defaults: null
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: ':lang'
+skip_render: null
+new_post_name: ':title.md'
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: '-date'
+default_category: uncategorized
+category_map: null
+tag_map: null
+meta_generator: true
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: mtime
+per_page: 10
+pagination_dir: page
+include: null
+exclude: null
+ignore: null
+theme:  butterfly
+deploy:
+  type: git
+  repo: git@github.com:Rupert-WLLP-Bai/Rupert-WLLP-Bai.github.io.git
+  branch: blog
+
+
+marked:
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: true
+  quotes: '“”‘’'
+  modifyAnchors: 0
+  anchorAlias: false
+  autolink: true
+  mangle: true
+  sanitizeUrl: false
+  dompurify: false
+  headerIds: true
+  lazyload: false
+  prependRoot: true
+  postAsset: false
+  external_link:
+    enable: false
+    exclude: []
+    nofollow: false
+  disableNunjucks: false
+  descriptionLists: true
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+indexed_generator:
+    path: ''
+    field: 'updated'
