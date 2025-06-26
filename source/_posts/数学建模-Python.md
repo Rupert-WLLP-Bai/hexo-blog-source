@@ -3,7 +3,7 @@ title: 数学建模-Python
 date: 2023-05-21 15:02:03
 tags: [数学建模, 数学, 数值计算, Python, 规划, 拟合, 时间序列, 滑动窗口, pandas, numpy, scipy]
 categories: [数学建模, 数学, Python]
-top: 9
+top: 
 ---
 
 # 规划问题

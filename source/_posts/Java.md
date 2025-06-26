@@ -2,7 +2,7 @@
 title: Java
 date: 2021-10-27 11:06:20
 tags: [Java, 后端]
-top: 5
+top: 
 ---
 
 # Java泛型

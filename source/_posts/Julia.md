@@ -11,7 +11,7 @@ categories:
   - 编程语言
   - 数据科学与工程
   - 数值计算与科学计算
-top: 8
+top: 
 ---
 
 # Julia

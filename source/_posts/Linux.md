@@ -3,7 +3,7 @@ title: Linux常用工具
 date: 2022-11-20 19:40:11
 tags: [Linux, 开发工具, shell]
 categories: [Linux]
-top: 8
+top: 
 ---
 
 - [valgrind](#valgrind)

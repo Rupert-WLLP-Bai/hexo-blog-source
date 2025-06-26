@@ -2,7 +2,7 @@
 title: Bazel
 date: 2022-11-24 11:13:24
 tags: [Linux, Bazel, C++, 构建工具]
-top: 8
+top: 
 ---
 
 # Bazel

@@ -3,7 +3,7 @@ title: LaTeX
 date: 2021-11-28 11:16:01
 tags: [写作, 编程语言, LaTeX, 表格, 数学, 公式, 排版]
 categories: [编程语言]
-top: 9
+top: 
 ---
 
 # LaTeX基础

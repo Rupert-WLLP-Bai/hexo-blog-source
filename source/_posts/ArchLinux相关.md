@@ -7,7 +7,7 @@ tags:
   - VS Code
   - Linux
 categories: [操作系统, 开发工具, Linux]
-top: 9
+top: 
 ---
 
 # 在VMware上安装Arch Linux并使用VS Code连接

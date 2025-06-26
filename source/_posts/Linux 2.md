@@ -2,7 +2,7 @@
 title: Linux配置记录
 date: 2021-11-17 18:59:52
 tags: [Linux, 系统配置]
-top: 8
+top: 
 ---
 
 # 关于Linux的一些记录
