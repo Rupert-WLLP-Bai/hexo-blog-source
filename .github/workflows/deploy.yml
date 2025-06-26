@@ -1,0 +1,55 @@
+name: Build and Deploy Hexo Blog
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+      
+      - name: Setup Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+  
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install Hexo dependencies
+        run: npm install
+
+      - name: Generate static files
+        run: npx hexo generate
+
+      - name: Deploy to GitHub Pages (blog branch)
+        run: |
+          cd public
+          git init
+          git config user.name "Rupert-WLLP-Bai"
+          git config user.email "cwllp1230@gmail.com"
+          git remote add origin https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/Rupert-WLLP-Bai/Rupert-WLLP-Bai.github.io.git
+          git checkout -b blog
+          git add .
+          git commit -m "Deploy blog from GitHub Actions at $(date -u '+%Y-%m-%d %H:%M:%S')"
+          git push -f origin blog
+
+      - name: Backup _posts (including images) to backup repo
+        run: |
+          git config --global user.name "Rupert-WLLP-Bai"
+          git config --global user.email "cwllp1230@gmail.com"
+
+          git clone https://x-access-token:${{ secrets.BACKUP_TOKEN }}@github.com/Rupert-WLLP-Bai/hexo-blog-backup.git backup-repo
+
+          rm -rf backup-repo/*
+          cp -r source/_posts backup-repo/
+
+          cd backup-repo
+          git add .
+          git commit -m "Backup _posts at $(date -u '+%Y-%m-%d %H:%M:%S')"
+          git push -f origin main
