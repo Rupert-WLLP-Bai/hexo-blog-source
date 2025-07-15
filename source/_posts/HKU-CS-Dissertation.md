@@ -17,7 +17,7 @@ Click-through rate (CTR) prediction is vital in online advertising and recommend
 
 To overcome this, we propose a new framework: **MSD-CTR (Multi-faceted Semantic Disentanglement for CTR prediction)**.
 
-![Figure 1: Overview of the Problem](./HKU-CS-Dissertation/fig1.png)
+{% asset_img fig1.png Figure 1: Problem Overview %}
 
 ---
 
@@ -36,7 +36,7 @@ MSD-CTR includes two key components:
   - **Individual-level alignment loss**
   - **Intra-view contrastive loss**
 
-![Figure 2: MSD-CTR Architecture](./HKU-CS-Dissertation/fig2.png)
+{% asset_img fig2.png Figure 2: MSD-CTR Architecture %}
 
 ---
 
@@ -55,7 +55,7 @@ We evaluate MSD-CTR on four Amazon datasets:
 
 MSD-CTR consistently outperforms strong baselines like DCNv2, DeepFM, CTRL, TIGER, and VQRec.
 
-![Figure 3: AUC/LogLoss Comparisons](./HKU-CS-Dissertation/fig3.png)
+{% asset_img fig3.png Figure 3: AUC/LogLoss Comparisons %}
 
 ---
 
@@ -68,11 +68,11 @@ Learned topics are semantically disentangled across views:
 - View 2: Dietary preferences
 - View 3: Customer feedback
 
-![Table: Topic Summaries](./HKU-CS-Dissertation/table.png)
+{% asset_img table.png Table: Topic Summaries %}
 
 We also use t-SNE to visualize learned embeddings:
 
-![Figure 4: t-SNE Embedding Visualization](./HKU-CS-Dissertation/fig4.png)
+{% asset_img fig4.png Figure 4: t-SNE Embedding Visualization %}
 
 ---
 
@@ -84,8 +84,6 @@ We analyze performance drops when removing:
 - Alignment losses
 
 MSD-CTR consistently proves its advantage through both metrics and visualization.
-
-![Figure 5: Ablation Study Results](assets/fig5_ablation.png)
 
 ---
 
